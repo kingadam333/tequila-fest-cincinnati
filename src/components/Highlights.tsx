@@ -5,55 +5,74 @@ import { motion } from "framer-motion";
 const highlights = [
   {
     icon: (
+      // Tequila bottle
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-10 h-10">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 3.75H6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 006 21.75h12a2.25 2.25 0 002.25-2.25V6l-3.75-2.25H9.75z"/>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9h16.5M9.75 3.75v5.25"/>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M9 3h6M9 3v1.5a3 3 0 00-1.5 2.6V9L6 12v7a2 2 0 002 2h8a2 2 0 002-2v-7l-1.5-3V7.1A3 3 0 0015 4.5V3M9 3h6M8.5 14h7"/>
       </svg>
     ),
     color: "#F5A623",
+    bgColor: "rgba(245,166,35,0.12)",
+    borderColor: "rgba(245,166,35,0.3)",
     number: "50+",
     label: "Premium Tequilas",
     desc: "Blanco, reposado, añejo & more from top distilleries",
+    vip: false,
   },
   {
     icon: (
+      // Taco / food bowl
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-10 h-10">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M12 8.25v-1.5m0 1.5c-1.355 0-2.697.056-4.024.166C6.845 8.51 6 9.473 6 10.608v2.513m6-4.871c1.355 0 2.697.056 4.024.166C17.155 8.51 18 9.473 18 10.608v2.513M15 8.25v-1.5M3 15l.75-4.5m16.5 4.5-.75-4.5M3 15h18m-9 3.75h.008v.008H12v-.008z"/>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M3 12c0 5 3.5 8 9 8s9-3 9-8"/>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M3 12h18"/>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M8 12c0-2.5 1.5-5 4-6.5C14.5 7 16 9.5 16 12"/>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M10 9.5c.5-.5 1-.8 2-.8s1.5.3 2 .8"/>
       </svg>
     ),
     color: "#C8102E",
+    bgColor: "rgba(200,16,46,0.12)",
+    borderColor: "rgba(200,16,46,0.3)",
     number: "∞",
     label: "Tacos & Mexican Food",
     desc: "Authentic street tacos, elotes, churros & more",
+    vip: false,
   },
   {
     icon: (
+      // Microphone
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-10 h-10">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9 9l10.5-3m0 6.553v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 11-.99-3.467l2.31-.66a2.25 2.25 0 001.632-2.163zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 01-.99-3.467l2.31-.66A2.25 2.25 0 009 15.553z"/>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 2a3 3 0 013 3v6a3 3 0 01-6 0V5a3 3 0 013-3z"/>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M19 10a7 7 0 01-14 0"/>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 17v4M8 21h8"/>
       </svg>
     ),
     color: "#7B2FBE",
+    bgColor: "rgba(123,47,190,0.12)",
+    borderColor: "rgba(123,47,190,0.3)",
     number: "Live",
     label: "Music All Day",
-    desc: "Latin, mariachi & more rocking the main stage",
+    desc: "DJ Fusemania & Apostle Jones Band rocking the main stage",
+    vip: false,
   },
   {
     icon: (
+      // Crown
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-10 h-10">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 21v-7.5a.75.75 0 01.75-.75h3a.75.75 0 01.75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349m-16.5 11.65V9.35m0 0a3.001 3.001 0 003.75-.615A2.993 2.993 0 009.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 002.25 1.016c.896 0 1.7-.393 2.25-1.016a3.001 3.001 0 003.75.614m-16.5 0a3.004 3.004 0 01-.621-4.72L4.318 3.44A1.5 1.5 0 015.378 3h13.243a1.5 1.5 0 011.06.44l1.19 1.189a3 3 0 01-.621 4.72m-13.5 8.65h3.75a.75.75 0 00.75-.75V13.5a.75.75 0 00-.75-.75H6.75a.75.75 0 00-.75.75v3.75c0 .415.336.75.75.75z"/>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M3 18h18M3 18l2-8 4.5 4L12 6l2.5 8L19 10l2 8H3z"/>
       </svg>
     ),
-    color: "#00A878",
-    number: "20+",
-    label: "Vendors & Artisans",
-    desc: "Local vendors, artisan crafts & festival merch",
+    color: "#C0C0C0",
+    bgColor: "rgba(192,192,192,0.1)",
+    borderColor: "rgba(220,220,220,0.4)",
+    number: "VIP",
+    label: "VIP Area",
+    desc: "Private area, 8 super premium tequilas & build your own taco bar",
+    vip: true,
   },
 ];
 
 export default function Highlights() {
   return (
     <section className="relative bg-[#120800] py-24 px-4 overflow-hidden">
-      {/* Top papel picado */}
       <div className="absolute top-0 left-0 right-0 papel-picado-border opacity-40 rotate-180" />
 
       <div className="max-w-6xl mx-auto">
@@ -81,21 +100,48 @@ export default function Highlights() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="group cursor-default relative bg-white/5 hover:bg-white/10 border border-white/10 hover:border-yellow-500/40 rounded-2xl p-7 text-center transition-all duration-300"
+              className={`group cursor-default relative rounded-2xl p-7 text-center transition-all duration-300 ${
+                item.vip
+                  ? "border border-[#C0C0C0]/30 hover:border-[#E8E8E8]/60"
+                  : "bg-white/5 hover:bg-white/10 border border-white/10 hover:border-yellow-500/40"
+              }`}
+              style={item.vip ? {
+                background: "linear-gradient(145deg, rgba(40,40,40,0.9) 0%, rgba(20,20,20,0.95) 60%, rgba(35,35,35,0.9) 100%)",
+                boxShadow: "inset 0 1px 0 rgba(255,255,255,0.15), 0 0 30px rgba(192,192,192,0.05)",
+              } : {}}
             >
+              {/* Platinum shimmer overlay for VIP */}
+              {item.vip && (
+                <div
+                  className="absolute inset-0 rounded-2xl opacity-20 pointer-events-none"
+                  style={{
+                    background: "linear-gradient(135deg, transparent 0%, rgba(255,255,255,0.15) 40%, transparent 60%, rgba(255,255,255,0.08) 100%)",
+                  }}
+                />
+              )}
+
               <div
-                className="inline-flex items-center justify-center w-16 h-16 rounded-2xl mb-5 mx-auto transition-transform duration-300 group-hover:scale-110"
-                style={{ backgroundColor: `${item.color}20`, color: item.color }}
+                className="inline-flex items-center justify-center w-16 h-16 rounded-2xl mb-5 mx-auto transition-transform duration-300 group-hover:scale-110 relative"
+                style={{
+                  backgroundColor: item.bgColor,
+                  color: item.color,
+                  border: `1px solid ${item.borderColor}`,
+                  ...(item.vip ? { boxShadow: "0 0 12px rgba(192,192,192,0.2)" } : {}),
+                }}
               >
                 {item.icon}
               </div>
+
               <div
-                className="font-display text-4xl mb-1"
-                style={{ color: item.color }}
+                className={`font-display text-4xl mb-1 ${item.vip ? "text-shimmer-platinum" : ""}`}
+                style={item.vip ? {} : { color: item.color }}
               >
                 {item.number}
               </div>
-              <h3 className="text-white font-bold text-lg mb-2">{item.label}</h3>
+
+              <h3 className={`font-bold text-lg mb-2 ${item.vip ? "text-[#D8D8D8]" : "text-white"}`}>
+                {item.label}
+              </h3>
               <p className="text-white/50 text-sm leading-relaxed">{item.desc}</p>
             </motion.div>
           ))}

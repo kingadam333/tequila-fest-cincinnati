@@ -12,7 +12,7 @@ const details = [
       </svg>
     ),
     label: "Date",
-    value: "September 20, 2025",
+    value: "June 13, 2026",
     sub: "Saturday",
   },
   {
@@ -23,8 +23,8 @@ const details = [
       </svg>
     ),
     label: "Hours",
-    value: "2:00 PM – 10:00 PM",
-    sub: "Doors open at 1:30 PM",
+    value: "3:00 PM – 9:00 PM",
+    sub: "Tequila sampling 4PM – 8PM",
   },
   {
     icon: (
@@ -34,8 +34,8 @@ const details = [
       </svg>
     ),
     label: "Location",
-    value: "Cincinnati, OH",
-    sub: "Venue TBA — Stay tuned!",
+    value: "Fountain Square",
+    sub: "Downtown Cincinnati, OH",
   },
   {
     icon: (
