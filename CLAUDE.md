@@ -5,7 +5,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Commands
 
 ```bash
-# Dev server — port 4000 (3000=Willoughby, 4000=Cincinnati, 4001=Cleveland, 4002=Columbus, 4003=USA)
+# Dev server — port 4000 (3000=Willoughby, 4000=Cincinnati, 4001=Cleveland, 4002=USA, 4003=Columbus)
 nohup npm run dev -- --port 4000 > /tmp/tequila-dev.log 2>&1 &
 
 # Build (check for errors before committing)
