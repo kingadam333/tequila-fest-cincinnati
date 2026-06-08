@@ -281,8 +281,6 @@ export default function VIPExperience() {
         >
           <a
             href="https://www.tequilafestusa.com/events/cincinnati"
-            target="_blank"
-            rel="noopener noreferrer"
             className="cursor-pointer inline-flex items-center gap-3 font-bold text-xl px-12 py-5 rounded-full transition-all duration-300 hover:scale-105 active:scale-95 relative overflow-hidden group"
             style={{
               background: "linear-gradient(135deg, #8a8a8a, #d4d4d4, #ffffff, #c0c0c0, #8a8a8a)",
