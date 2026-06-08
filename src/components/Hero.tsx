@@ -135,7 +135,7 @@ export default function Hero() {
           className="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
           <a
-            href="https://www.tequilafestusa.com/events/cincinnati"
+            href="https://www.tequilafestusa.com/events/cincinnati#tickets"
             className="animate-pulse-glow cursor-pointer inline-flex items-center gap-3 bg-yellow-500 hover:bg-yellow-400 text-black font-bold text-xl px-10 py-5 rounded-full transition-all duration-200 hover:scale-105 active:scale-95"
           >
             <span>GET TICKETS</span>
