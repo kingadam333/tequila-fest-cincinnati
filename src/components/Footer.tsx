@@ -13,7 +13,7 @@ export default function Footer() {
 
         <div className="flex gap-6 text-white/40 text-sm">
           <a
-            href="https://tequilafestusa.com"
+            href="https://www.tequilafestusa.com/events/cincinnati"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-yellow-400 transition-colors duration-200 cursor-pointer"

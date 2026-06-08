@@ -37,7 +37,7 @@ export default function TicketsCTA() {
           </p>
 
           <a
-            href="https://tequilafestusa.com"
+            href="https://www.tequilafestusa.com/events/cincinnati"
             target="_blank"
             rel="noopener noreferrer"
             className="animate-pulse-glow cursor-pointer inline-flex items-center gap-4 bg-yellow-500 hover:bg-yellow-400 text-black font-bold text-2xl px-14 py-6 rounded-full transition-all duration-200 hover:scale-105 active:scale-95"
@@ -51,7 +51,7 @@ export default function TicketsCTA() {
           <p className="text-white/30 text-sm mt-6">
             All ticket sales managed by{" "}
             <a
-              href="https://tequilafestusa.com"
+              href="https://www.tequilafestusa.com/events/cincinnati"
               target="_blank"
               rel="noopener noreferrer"
               className="text-yellow-500/60 hover:text-yellow-400 underline underline-offset-4 transition-colors duration-200"
