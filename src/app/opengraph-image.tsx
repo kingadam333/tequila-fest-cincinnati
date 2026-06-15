@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 import { readFileSync } from "fs";
 import { join } from "path";
 
-export const alt = "Tequila Fest Cincinnati 2026 – June 13 at Fountain Square";
+export const alt = "Tequila Fest Cincinnati 2027 – June 12 at Fountain Square";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -129,7 +129,7 @@ export default function Image() {
               color: "rgba(255,255,255,0.92)",
             }}
           >
-            June 13, 2026 · Fountain Square · Downtown Cincinnati
+            June 12, 2027 · Fountain Square · Downtown Cincinnati
           </div>
 
           {/* Highlights */}

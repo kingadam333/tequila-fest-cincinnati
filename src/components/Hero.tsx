@@ -6,7 +6,7 @@ import Image from "next/image";
 import Confetti from "./Confetti";
 
 function Countdown() {
-  const eventDate = new Date("2026-06-13T15:00:00");
+  const eventDate = new Date("2027-06-12T15:00:00");
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
