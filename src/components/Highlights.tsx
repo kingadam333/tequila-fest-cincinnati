@@ -147,22 +147,6 @@ export default function Highlights() {
           ))}
         </div>
 
-        {/* Brand CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-          className="text-center mt-10"
-        >
-          <a
-            href="https://www.tequilafestusa.com/brand-packages"
-            className="inline-flex items-center gap-2 border border-white/20 hover:border-yellow-500/50 text-white/60 hover:text-yellow-400 text-sm px-6 py-2.5 rounded-full transition-all duration-200 hover:bg-yellow-500/5"
-          >
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-            Add Your Tequila Brand
-          </a>
-        </motion.div>
       </div>
 
       <div className="absolute bottom-0 left-0 right-0 papel-picado-border opacity-40" />

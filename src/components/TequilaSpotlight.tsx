@@ -78,6 +78,22 @@ export default function TequilaSpotlight() {
             </div>
           ))}
         </motion.div>
+
+        {/* Brand CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.3 }}
+          className="text-center mt-10"
+        >
+          <a
+            href="https://www.tequilafestusa.com/brand-packages"
+            className="inline-flex items-center gap-2 bg-black border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-black font-semibold text-sm tracking-widest uppercase px-8 py-3 rounded-full transition-all duration-200"
+          >
+            Add Your Tequila Brand
+          </a>
+        </motion.div>
       </div>
 
       <style jsx>{`
