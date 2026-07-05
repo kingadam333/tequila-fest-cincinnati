@@ -163,7 +163,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 1 }}
-          className="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center"
+          className="mt-10 flex flex-col items-center gap-3"
         >
           <a
             href="https://www.tequilafestusa.com/events/cincinnati#tickets"
@@ -174,12 +174,20 @@ export default function Hero() {
               <path d="M5 12h14M12 5l7 7-7 7"/>
             </svg>
           </a>
-          <a
-            href="#details"
-            className="cursor-pointer inline-flex items-center gap-2 border border-white/30 hover:border-white/60 text-white/80 hover:text-white text-lg px-8 py-4 rounded-full transition-all duration-200"
-          >
-            Learn More
-          </a>
+          <div className="flex gap-3">
+            <a
+              href="#details"
+              className="cursor-pointer inline-flex items-center gap-2 border border-white/30 hover:border-white/60 text-white/70 hover:text-white text-sm px-6 py-2.5 rounded-full transition-all duration-200"
+            >
+              Learn More
+            </a>
+            <a
+              href="https://www.tequilafestusa.com/vendors"
+              className="cursor-pointer inline-flex items-center gap-2 border border-white/30 hover:border-white/60 text-white/70 hover:text-white text-sm px-6 py-2.5 rounded-full transition-all duration-200"
+            >
+              Vendors Wanted
+            </a>
+          </div>
         </motion.div>
 
         {/* Date pill */}
