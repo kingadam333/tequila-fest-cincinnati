@@ -197,23 +197,3 @@ export default function Hero() {
           transition={{ delay: 1.2 }}
           className="mt-6 text-white/70 text-sm tracking-wider"
         >
-          Tickets sold exclusively at TequilaFestUSA.com
-        </motion.p>
-      </div>
-
-      {/* Scroll indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.5 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2"
-      >
-        <span className="text-white/30 text-xs tracking-widest uppercase">Scroll</span>
-        <div className="w-px h-8 bg-gradient-to-b from-white/30 to-transparent animate-float" />
-      </motion.div>
-
-      {/* Papel picado bottom border */}
-      <div className="absolute bottom-0 left-0 right-0 z-20 papel-picado-border opacity-60" />
-    </section>
-  );
-}
