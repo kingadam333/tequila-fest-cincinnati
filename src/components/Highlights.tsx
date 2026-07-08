@@ -169,7 +169,7 @@ export default function Highlights() {
               {
                 name: "Tequila Sampling",
                 price: "$55",
-                desc: "12 tasting tickets + souvenir item",
+                desc: "Entry + 12 tasting tickets + souvenir item",
                 color: "#F5A623",
                 border: "rgba(245,166,35,0.35)",
                 bg: "rgba(245,166,35,0.07)",
