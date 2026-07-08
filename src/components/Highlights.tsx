@@ -147,6 +147,65 @@ export default function Highlights() {
           ))}
         </div>
 
+        {/* Ticket types */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="mt-12"
+        >
+          <p className="text-center text-white/40 text-xs font-semibold tracking-[0.25em] uppercase mb-6">Ticket Options</p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            {[
+              {
+                name: "GA / Designated Driver",
+                price: "$5",
+                desc: "Entry + food & entertainment access",
+                color: "#00A878",
+                border: "rgba(0,168,120,0.3)",
+                bg: "rgba(0,168,120,0.07)",
+              },
+              {
+                name: "Tequila Sampling",
+                price: "$55",
+                desc: "12 tasting tickets + souvenir item",
+                color: "#F5A623",
+                border: "rgba(245,166,35,0.35)",
+                bg: "rgba(245,166,35,0.07)",
+              },
+              {
+                name: "VIP Experience",
+                price: "$125",
+                desc: "Private area · 8 ultra-premium pours · build-your-own taco bar",
+                color: "#C0C0C0",
+                border: "rgba(192,192,192,0.35)",
+                bg: "rgba(192,192,192,0.07)",
+              },
+            ].map((ticket, i) => (
+              <motion.a
+                key={ticket.name}
+                href="https://www.tequilafestusa.com/events/cincinnati#tickets"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: 0.1 * i }}
+                className="group relative rounded-2xl p-6 text-center transition-all duration-200 hover:scale-[1.02] cursor-pointer"
+                style={{ background: ticket.bg, border: `1px solid ${ticket.border}` }}
+              >
+                <p className="font-display text-3xl mb-1" style={{ color: ticket.color }}>
+                  Starting at {ticket.price}
+                </p>
+                <h4 className="font-bold text-white text-base mb-2">{ticket.name}</h4>
+                <p className="text-white/45 text-sm leading-relaxed">{ticket.desc}</p>
+                <p className="mt-4 text-xs font-semibold tracking-widest uppercase" style={{ color: ticket.color }}>
+                  Get Tickets →
+                </p>
+              </motion.a>
+            ))}
+          </div>
+        </motion.div>
+
       </div>
 
       <div className="absolute bottom-0 left-0 right-0 papel-picado-border opacity-40" />
