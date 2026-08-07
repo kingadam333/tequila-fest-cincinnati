@@ -14,11 +14,17 @@ export default function EmailSignup() {
     if (!email) return;
     setStatus("loading");
     try {
-      if (!supabase) throw new Error("Service unavailable");
-      const { error } = await supabase
-        .from("email_subscribers")
-        .insert([{ email, source: "tequilafest-cincinnati" }]);
-      if (error) throw error;
+      const res = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+      if (!res.ok) throw new Error("Subscribe failed");
+
+      if (supabase) {
+        supabase.from("email_subscribers").insert([{ email, source: "tequilafest-cincinnati" }]);
+      }
+
       setStatus("success");
       setMessage("You're on the list! ¡Salud!");
       setEmail("");
