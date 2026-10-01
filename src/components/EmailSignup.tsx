@@ -3,9 +3,12 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { supabase } from "@/lib/supabase";
+import HoneypotField from "@/components/HoneypotField";
+import { HONEYPOT_FIELD } from "@/lib/spamGuard";
 
 export default function EmailSignup() {
   const [email, setEmail] = useState("");
+  const [hp, setHp] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [message, setMessage] = useState("");
 
@@ -17,7 +20,7 @@ export default function EmailSignup() {
       const res = await fetch("/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({ email, [HONEYPOT_FIELD]: hp }),
       });
       if (!res.ok) throw new Error("Subscribe failed");
 
@@ -77,6 +80,7 @@ export default function EmailSignup() {
                 placeholder="your@email.com"
                 className="flex-1 bg-white/20 backdrop-blur-sm border border-white/30 focus:border-white/80 text-white placeholder-white/50 rounded-full px-6 py-4 text-lg outline-none transition-all duration-200"
               />
+              <HoneypotField value={hp} onChange={setHp} />
               <button
                 type="submit"
                 disabled={status === "loading"}
