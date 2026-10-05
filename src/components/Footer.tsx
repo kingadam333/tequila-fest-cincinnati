@@ -11,18 +11,25 @@ export default function Footer() {
           <p className="text-white/30 text-sm mt-1">© {year} · All Rights Reserved</p>
         </div>
 
-        <div className="flex gap-6 text-white/40 text-sm">
+        <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-white/40 text-sm">
           <a
             href="https://www.tequilafestusa.com/events/cincinnati#tickets"
             className="hover:text-yellow-400 transition-colors duration-200 cursor-pointer"
           >
             TequilaFestUSA.com
           </a>
-          <span>·</span>
+          <span className="hidden sm:inline">·</span>
+          <a
+            href="https://www.tequilafestusa.com/brand-packages"
+            className="hover:text-yellow-400 transition-colors duration-200 cursor-pointer"
+          >
+            Add Your Tequila Brand
+          </a>
+          <span className="hidden sm:inline">·</span>
           <a href="mailto:info@tequilafestusa.com" className="hover:text-yellow-400 transition-colors duration-200 cursor-pointer">
             Contact
           </a>
-          <span>·</span>
+          <span className="hidden sm:inline">·</span>
           <span>21+ Only</span>
         </div>
 
