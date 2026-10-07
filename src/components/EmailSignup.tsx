@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { supabase } from "@/lib/supabase";
 import HoneypotField from "@/components/HoneypotField";
 import { HONEYPOT_FIELD } from "@/lib/spamGuard";
 
@@ -23,10 +22,6 @@ export default function EmailSignup() {
         body: JSON.stringify({ email, [HONEYPOT_FIELD]: hp }),
       });
       if (!res.ok) throw new Error("Subscribe failed");
-
-      if (supabase) {
-        supabase.from("email_subscribers").insert([{ email, source: "tequilafest-cincinnati" }]);
-      }
 
       setStatus("success");
       setMessage("You're on the list! ¡Salud!");
